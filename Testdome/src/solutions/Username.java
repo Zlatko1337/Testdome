@@ -21,16 +21,16 @@ public class Username {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(validate("Mike_Standish")); // Valid username
-		System.out.println(validate("Mike Standish")); // Invalid 
-		System.out.println(validate("M__a")); // Invalid 
-		System.out.println(validate("Mik")); // Invalid 
-		System.out.println(validate("Miki/nsky")); // Invalid 
-		System.out.println(validate("9Mike")); // Invalid 
-		System.out.println(validate("_Mike")); // Invalid 
-		System.out.println(validate("Mike_")); // Invalid 
-		System.out.println(validate("M_ik_e")); // Invalid 
-		System.out.println(validate("Mike_")); // Invalid
+		System.out.println(validate("Mike_Standish")); 	// Valid username
+		System.out.println(validate("M9_e")); 			// Valid 
+		System.out.println(validate("Mike Standish")); 	// Invalid 
+		System.out.println(validate("M__a")); 			// Invalid 
+		System.out.println(validate("Mik")); 			// Invalid 
+		System.out.println(validate("Miki/nsky")); 		// Invalid 
+		System.out.println(validate("9Mike")); 			// Invalid 
+		System.out.println(validate("_Mike")); 			// Invalid 
+		System.out.println(validate("Mike_")); 			// Invalid 
+		System.out.println(validate("M_ik_e")); 		// Invalid 
 	}
 
 }
