@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class Username {
 
 	public static boolean validate(String username) {      
-		Pattern pattern = Pattern.compile("^(?=.{4,}$)(?!.*_.*_)(?![0-9_])[a-zA-Z0-9_]+(?<!_)$");
+		Pattern pattern = Pattern.compile("^(?=.{4,}$)(?!.*_.*_)(?![0-9_])[a-zA-Z0-9_]*[^_]$");
 		Matcher matcher = pattern.matcher(username);
 		return (matcher.matches());
 	}
@@ -30,7 +30,8 @@ public class Username {
 		System.out.println(validate("_Mike")); // Invalid 
 		System.out.println(validate("Mike_")); // Invalid 
 		System.out.println(validate("M_ik_e")); // Invalid 
+		System.out.println(validate("Mike_")); // Invalid
 	}
-    
+
 }
 
