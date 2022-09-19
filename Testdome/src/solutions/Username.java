@@ -15,10 +15,10 @@ import java.util.regex.Pattern;
 public class Username {
     
 	public static boolean validate(String username) {      
-        Pattern pattern = Pattern.compile("^(?=.{4,}$)(?=([^_]*(_[^_]*){0,1})$)(?![0-9_])[a-zA-Z0-9_]+(?<![_])$");
-        Matcher matcher = pattern.matcher(username);
-        return (matcher.matches());
-    }
+	    Pattern pattern = Pattern.compile("^(?=.{4,}$)(?=([^_]*(_[^_]*){0,1})$)(?![0-9_])[a-zA-Z0-9_]+(?<![_])$");
+	    Matcher matcher = pattern.matcher(username);
+	    return (matcher.matches());
+	}
     
     public static void main(String[] args) {
         System.out.println(validate("Mike_Standish")); // Valid username
